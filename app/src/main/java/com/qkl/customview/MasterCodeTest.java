@@ -7,4 +7,5 @@ package com.qkl.customview;
 
 public class MasterCodeTest {
     private boolean firstTest;
+    private boolean secondTest;
 }
