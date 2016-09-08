@@ -1,6 +1,7 @@
 package com.qkl.customview;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -24,12 +25,14 @@ public class CircleView extends View {
     }
 
     public CircleView(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        init();
+        this(context, attrs,0);
     }
 
     public CircleView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+         super(context, attrs, defStyleAttr);
+        TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.CircleView);
+        mColor = a.getColor(R.styleable.CircleView_circle_color,Color.RED);
+        a.recycle();
         init();
     }
 
