@@ -7,4 +7,5 @@ import com.qkl.aidl.Book;
 interface BookManager {
     List<Book> getBooks();
     void addBook(in Book book);
+
 }

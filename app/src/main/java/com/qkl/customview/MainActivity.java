@@ -27,10 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     //标志当前与服务端连接状况的布尔值，false为未连接，true为连接中
     private boolean mBound = false;
-
     //包含Book对象的list
     private List<Book> mBooks;
-
     private ServiceConnection mConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
