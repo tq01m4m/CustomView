@@ -12,3 +12,6 @@ http://gityuan.com/2016/03/12/start-activity/
 
 有赞Android客户端网络架构演进
 http://tech.youzan.com/android_http/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+
+Handler、Looper与MessageQueue源码分析
+https://segmentfault.com/a/1190000007216273
